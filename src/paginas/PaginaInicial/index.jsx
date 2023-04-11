@@ -1,13 +1,14 @@
-import React from "react";
-import { Cabecalho } from "../../componentes/Cabecalho";
-import Menu from "../../componentes/Menu";
 import banner from "./banner.png";
-import styles from "./paginaInicial.module.scss";
+import Cabecalho from "../../componentes/Cabecalho";
+import Menu from "../../componentes/Menu";
+import styles from "./PaginaInicial.module.scss";
+import Rodape from "../../componentes/Rodape";
 import Galeria from "../../componentes/Galeria";
+import Populares from "../../componentes/Populares";
 
-export const PaginaInicial = () => {
+export default function PaginaInicial() {
   return (
-    <div>
+    <>
       <Cabecalho />
       <main>
         <section className={styles.principal}>
@@ -17,10 +18,12 @@ export const PaginaInicial = () => {
             <img src={banner} alt="A imagem da terra vista do espaço" />
           </div>
         </section>
+        <div className={styles.galeria}>
+          <Galeria />
+          <Populares />
+        </div>
       </main>
-      <div>
-        <Galeria />
-      </div>
-    </div>
+      <Rodape />
+    </>
   );
-};
+}

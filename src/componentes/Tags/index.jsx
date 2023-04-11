@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./Tags.module.scss";
+import React from 'react'
+import styles from './Tags.module.scss'
 
 export default function Tags() {
   return (
@@ -12,5 +12,5 @@ export default function Tags() {
         <li>Planetas</li>
       </ul>
     </div>
-  );
+  )
 }
