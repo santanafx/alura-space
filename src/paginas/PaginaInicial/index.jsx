@@ -3,6 +3,7 @@ import { Cabecalho } from "../../componentes/Cabecalho";
 import Menu from "../../componentes/Menu";
 import banner from "./banner.png";
 import styles from "./paginaInicial.module.scss";
+import Galeria from "../../componentes/Galeria";
 
 export const PaginaInicial = () => {
   return (
@@ -17,6 +18,9 @@ export const PaginaInicial = () => {
           </div>
         </section>
       </main>
+      <div>
+        <Galeria />
+      </div>
     </div>
   );
 };
